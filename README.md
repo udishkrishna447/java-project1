@@ -49,32 +49,36 @@ A database-driven Java application utilizing JDBC to manage student records, per
 ├── AcademicDAO.java                                # 3-Phase Marks Engine, Grading System & Reports
 ├── MainApp.java                                    # Interactive Menu-Driven CLI
 ├── kec_schema.sql                                  # MySQL Database Schema DDL & Seed Data
-└── *.jar                                           # JDBC Driver Libraries
+├── .gitignore                                      # Excludes class binaries & library jars
+└── README.md                                       # Project Documentation
 ```
 
 ---
 
-## 🛠️ How to Compile & Run
+## 🛠️ Prerequisites & Setup
 
-Open Command Prompt in the project directory:
+### 1. Download MySQL Connector/J JAR
+Download **`mysql-connector-j-8.x.x.jar`** from [MySQL Official Downloads](https://dev.mysql.com/downloads/connector/j/) or Maven Central, and place it in the project root directory.
 
-```cmd
-javac -cp ".;mysql-connector-j-8.0.33.jar;sqlite-jdbc-3.45.1.0.jar;slf4j-api-1.7.36.jar;slf4j-simple-1.7.36.jar" DBConnection.java StudentDAO.java AcademicDAO.java MainApp.java
-
-java -cp ".;mysql-connector-j-8.0.33.jar;sqlite-jdbc-3.45.1.0.jar;slf4j-api-1.7.36.jar;slf4j-simple-1.7.36.jar" MainApp
-```
-
----
-
-## 📜 Database Setup (MySQL)
-
+### 2. Database Setup (MySQL)
+Run the schema script to create the database and tables:
 ```bash
 mysql -u root -p < kec_schema.sql
 ```
-Update credentials in `DBConnection.java` if needed.
+*(Verify your database credentials in `DBConnection.java`).*
+
+### 3. Compile & Run via Command Prompt
+
+```cmd
+javac -cp ".;mysql-connector-j-8.0.33.jar" DBConnection.java StudentDAO.java AcademicDAO.java MainApp.java
+
+java -cp ".;mysql-connector-j-8.0.33.jar" MainApp
+```
 
 ---
 
 ## 👨‍💻 Author
 - **Udishkrishna V**
-- Kongu Engineering College
+- Roll No: **25ITR165**
+- Department of Information Technology
+- **Kongu Engineering College (Autonomous)**
