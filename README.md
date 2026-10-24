@@ -43,12 +43,13 @@ A database-driven Java application utilizing JDBC to manage student records, per
 ## 📁 Repository Structure
 
 ```
-├── DBConnection.java          # JDBC Connection Manager
-├── StudentDAO.java            # Student, Course, Enrollment, and Attendance DAO
-├── AcademicDAO.java           # 3-Phase Marks Engine, Grading System & Reports
-├── MainApp.java               # Interactive Menu-Driven CLI
-├── kec_schema.sql             # MySQL Database Schema DDL & Seed Data
-└── *.jar                      # JDBC Driver Libraries
+├── JAVA ASSIGNMENT- UDISHKRISHNA V (25ITR165).pdf  # Full Project Report & Documentation
+├── DBConnection.java                               # JDBC Connection Manager
+├── StudentDAO.java                                 # Student, Course, Enrollment, and Attendance DAO
+├── AcademicDAO.java                                # 3-Phase Marks Engine, Grading System & Reports
+├── MainApp.java                                    # Interactive Menu-Driven CLI
+├── kec_schema.sql                                  # MySQL Database Schema DDL & Seed Data
+└── *.jar                                           # JDBC Driver Libraries
 ```
 
 ---
