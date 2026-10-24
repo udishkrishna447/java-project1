@@ -43,25 +43,20 @@ A database-driven Java application utilizing JDBC to manage student records, per
 ## 📁 Repository Structure
 
 ```
-├── DBConnection.java          # JDBC Connection Manager (MySQL primary + local fallback)
+├── DBConnection.java          # JDBC Connection Manager
 ├── StudentDAO.java            # Student, Course, Enrollment, and Attendance DAO
 ├── AcademicDAO.java           # 3-Phase Marks Engine, Grading System & Reports
 ├── MainApp.java               # Interactive Menu-Driven CLI
-├── AutoDemo.java              # Automated Demonstration Runner (Choices 1-14)
 ├── kec_schema.sql             # MySQL Database Schema DDL & Seed Data
-├── run_app.bat                # 1-Click Windows Batch Launcher
-├── auto_demo.bat              # 1-Click Automated Demo Launcher
-└── lib/                       # JDBC Drivers (MySQL Connector & SQLite)
+└── *.jar                      # JDBC Driver Libraries
 ```
 
 ---
 
 ## 🛠️ How to Compile & Run
 
-### 1-Click Windows Launcher:
-Double-click `run_app.bat` or `auto_demo.bat`.
+Open Command Prompt in the project directory:
 
-### Or via Command Prompt:
 ```cmd
 javac -cp ".;mysql-connector-j-8.0.33.jar;sqlite-jdbc-3.45.1.0.jar;slf4j-api-1.7.36.jar;slf4j-simple-1.7.36.jar" DBConnection.java StudentDAO.java AcademicDAO.java MainApp.java
 
